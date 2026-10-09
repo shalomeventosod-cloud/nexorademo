@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0c1110" />
+  <meta name="description" content="NEXORA: portal empresarial y catálogos independientes por categoría, marca y público." />
+  <title>NEXORA — Portal empresarial y catálogos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="demo-ribbon"><span class="demo-spark">✦</span> PRESENTACIÓN INTERACTIVA <span class="demo-sep">/</span> DEMO 2026 <span class="demo-tag">Productos y precios ilustrativos</span></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#/inicio" aria-label="Nexora, ir al inicio">NEX<span>O</span>RA<span class="brand-dot">.</span></a>
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#/inicio" data-nav="inicio">Inicio</a>
+        <a href="#/inicio/categorias" data-nav="categorias">Catálogos</a>
+        <a href="#/inicio/nosotros" data-nav="nosotros">Nosotros</a>
+        <a href="#/inicio/contacto" data-nav="contacto">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-action search-action" href="#/buscar" title="Buscar productos" aria-label="Buscar en todos los catálogos"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></a>
+        <a class="favorites-action" href="#/favoritos" title="Ver favoritos" aria-label="Ver favoritos"><svg viewBox="0 0 24 24"><path d="M20.5 8.6c0 4.1-8.5 10-8.5 10s-8.5-5.9-8.5-10a4.65 4.65 0 0 1 8.5-2.45 4.65 4.65 0 0 1 8.5 2.45Z"/></svg><span id="favCounter">0</span></a>
+        <a class="header-cta" href="#/inicio/categorias">Explorar catálogos <span>↗</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <nav id="mobileNav" class="mobile-nav" aria-label="Menú móvil" hidden>
+      <a href="#/inicio">Inicio</a><a href="#/inicio/categorias">Catálogos</a><a href="#/buscar">Buscar productos</a><a href="#/favoritos">Favoritos</a><a href="#/inicio/nosotros">Nosotros</a><a href="#/inicio/contacto">Contacto</a>
+    </nav>
+  </header>
+  <main id="app" aria-live="polite"></main>
+  <footer class="site-footer"><div class="container footer-inner"><div><a class="brand footer-brand" href="#/inicio">NEX<span>O</span>RA<span class="brand-dot">.</span></a><p>Una empresa. Un universo de productos.</p></div><div class="footer-links"><a href="#/inicio">Inicio</a><a href="#/inicio/categorias">Catálogos</a><a href="#/favoritos">Favoritos</a><a href="#/inicio/contacto">Contacto</a></div><div class="footer-copy">© 2026 NEXORA<br>Demostración comercial · Sin ventas reales</div></div></footer>
+  <div class="modal-backdrop" id="modalBackdrop" hidden><div class="dialog" id="dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button id="modalClose" class="modal-close" aria-label="Cerrar ventana">×</button><div id="modalContent"></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
